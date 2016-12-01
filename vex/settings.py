@@ -3,7 +3,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'nlo7gsil7+mdz*c@1$h&(*dq_8)@bf#&#@l-38w-zc*o-@jhu0'
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -53,7 +53,7 @@ WSGI_APPLICATION = 'vex.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'franz',
+        'NAME': 'vex',
         'USER': 'postgres',
         'PASSWORD': '',
         'HOST': 'localhost',
